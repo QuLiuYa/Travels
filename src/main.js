@@ -1,8 +1,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import 'styles/reset.css'
+import 'styles/border.css'
+import FastClick from 'fastclick'
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
+// 解决 点击 300 延迟
+FastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({

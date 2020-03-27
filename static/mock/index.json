@@ -1,0 +1,105 @@
+{
+  "ret": true,
+  "data": {
+    "swiperList": [
+      {
+        "id": 1,
+        "url": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/ea919c3fccdad801b2b00b65eab0e8ea.jpg_r_640x290x70_ce1d70ab.jpg"
+      },
+      {
+        "id": 2,
+        "url": "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/ca640246fde83729fb1dbb095ba0bfe1.jpg_r_640x290x70_4432d456.jpg"
+      }
+    ],
+    "iconlist": [
+      {
+        "id": 1,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/gonglue.png",
+        "desc": "攻略"
+      },
+      {
+        "id": 2,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/bitiyan.png",
+        "desc": "旅游榜单"
+      },
+      {
+        "id": 3,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/jingdian.png",
+        "desc": "景点"
+      },
+      {
+        "id": 4,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/zhusu.png",
+        "desc": "酒店"
+      },
+      {
+        "id": 5,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/tesetiyan.png",
+        "desc": "玩乐"
+      },
+      {
+        "id": 6,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/tesecai.png",
+        "desc": "美食"
+      },
+      {
+        "id": 7,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/gouwu.png",
+        "desc": "购物"
+      },
+      {
+        "id": 8,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/luxian.png",
+        "desc": "路线"
+      },
+      {
+        "id": 9,
+        "iconUrl": "//s.qunarzz.com/travel/travel_hy2/2019/youji.png",
+        "desc": "游记"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "001",
+        "imgUrl": "https://imgs.qunarzz.com/p/tts0/1809/7c/1ff90b381595a302.jpg_r_480x320x90_9aab0341.jpg",
+        "title": "珠海-乌鲁木齐 8天跟团游",
+        "desc": "钜惠新疆♥全程0自费☞陆地头等舱❀豪华住宿丨游赛里木湖+天山天池+巴音布鲁克",
+        "price": "￥999"
+      },
+      {
+        "id": "002",
+        "imgUrl": "https://imgs.qunarzz.com/vs_ceph_vs_tts/e211cdcf-1d18-4201-8955-d376fc111ada.jpg_r_480x320x95_3dea5fe6.jpg",
+        "title": "珠海- 乌鲁木齐 8天跟团游",
+        "desc": "钜惠新疆♥全程0自费☞陆地头等舱❀豪华住宿丨游赛里木湖+天山天池+巴音布鲁克",
+        "price": "￥888"
+      },
+      {
+        "id": "003",
+        "imgUrl": "https://imgs.qunarzz.com/vs_ceph_vs_tts/5bf3c567-9fdb-460b-9f02-34be7445c9e8.jpg_r_480x320x95_ddae113a.jpg",
+        "title": "珠海-乌鲁木齐 8天跟团游",
+        "desc": "钜惠新疆♥全程0自费☞陆地头等舱❀豪华住宿丨游赛里木湖+天山天池+巴音布鲁克",
+        "price": "￥1111"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "001",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg",
+        "title": "北京赏花好地方",
+        "desc": "乱花渐欲迷人眼，京城赏花大搜索"
+      },
+      {
+        "id": "002",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg",
+        "title": "京城周末撒欢",
+        "desc": "在帝都过周末，不仅仅是城中游！"
+      },
+      {
+        "id": "003",
+        "imgUrl": "https://imgs.qunarzz.com/sight/source/1811/7e/476589267ebb41.jpg_r_640x214_bf599709.jpg",
+        "title": "京城溜娃必去",
+        "desc": "德智体美劳全面发展的亲子日，这些地方该去看看…"
+      }
+    ]
+  }
+}

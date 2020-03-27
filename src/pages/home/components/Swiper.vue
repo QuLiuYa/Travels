@@ -1,7 +1,7 @@
 <template>
   <div class="swiper">
     <swiper :options="swiperOptions">
-      <swiper-slide v-for="item in swiperUrl" :key="item.id">
+      <swiper-slide v-for="item in swiperList" :key="item.id">
         <img class="swiperimg" :src="item.url" alt />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
@@ -20,7 +20,7 @@ export default {
         },
         loop: true
       },
-      swiperUrl: [
+      swiperList: [
         {
           id: 1,
           url:

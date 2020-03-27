@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item in weekendList" :key="item.id">
         <div class="item-img-warp">
           <img class="item-img" :src="item.imgUrl" />
         </div>
@@ -20,7 +20,7 @@ export default {
   name: 'HomeRecommend',
   data () {
     return {
-      recommendList: [
+      weekendList: [
         {
           id: '001',
           imgUrl: 'https://imgs.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg',
@@ -55,7 +55,6 @@ export default {
 @import '~styles/varibles.styl'
 .title
   line-height 0.8rem
-  margin-top 0.2rem
   color #333
   text-indent 0.2rem
   background #eee

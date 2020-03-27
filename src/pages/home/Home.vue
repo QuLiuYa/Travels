@@ -25,6 +25,17 @@ export default {
   },
   data () {
     return {}
+  },
+  methods: {
+    getHomeInfo () {
+      this.$http('/api/index.json')
+        .then(res => {
+          console.log(res)
+        })
+    }
+  },
+  mounted () {
+    this.getHomeInfo()
   }
 }
 </script>

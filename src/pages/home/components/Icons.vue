@@ -16,66 +16,15 @@
 <script>
 export default {
   name: 'HomeIcons',
-  data () {
-    return {
-      // swiperOptions: {
-      //   pagination: {
-      //     el: '.swiper-pagination'
-      //   }
-      // }
-      iconlist: [
-        {
-          id: 1,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/gonglue.png',
-          desc: '攻略'
-        },
-        {
-          id: 2,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/bitiyan.png',
-          desc: '旅游榜单'
-        },
-        {
-          id: 3,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/jingdian.png',
-          desc: '景点'
-        },
-        {
-          id: 4,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/zhusu.png',
-          desc: '酒店'
-        },
-        {
-          id: 5,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/tesetiyan.png',
-          desc: '玩乐'
-        },
-        {
-          id: 6,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/tesecai.png',
-          desc: '美食'
-        },
-        {
-          id: 7,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/gouwu.png',
-          desc: '购物'
-        },
-        {
-          id: 8,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/luxian.png',
-          desc: '路线'
-        },
-        {
-          id: 9,
-          iconUrl: '//s.qunarzz.com/travel/travel_hy2/2019/youji.png',
-          desc: '游记'
-        }
-      ]
+  props: {
+    list: {
+      type: Array
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconlist.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

@@ -2,7 +2,7 @@
   <div>
     <div class="title">旅游推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item in list" :key="item.id">
         <img class="item-img" :src="item.imgUrl" />
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -16,39 +16,11 @@
 
 <script>
 export default {
-  name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '001',
-          imgUrl: 'https://imgs.qunarzz.com/p/tts0/1809/7c/1ff90b381595a302.jpg_r_480x320x90_9aab0341.jpg',
-          title: '珠海-乌鲁木齐 8天跟团游',
-          desc: '钜惠新疆♥全程0自费☞陆地头等舱❀豪华住宿丨游赛里木湖+天山天池+巴音布鲁克',
-          price: '￥999'
-        },
-        {
-          id: '002',
-          imgUrl: 'https://imgs.qunarzz.com/vs_ceph_vs_tts/e211cdcf-1d18-4201-8955-d376fc111ada.jpg_r_480x320x95_3dea5fe6.jpg',
-          title: '珠海- 乌鲁木齐 8天跟团游',
-          desc: '钜惠新疆♥全程0自费☞陆地头等舱❀豪华住宿丨游赛里木湖+天山天池+巴音布鲁克',
-          price: '￥888'
-        },
-        {
-          id: '003',
-          imgUrl: 'https://imgs.qunarzz.com/vs_ceph_vs_tts/5bf3c567-9fdb-460b-9f02-34be7445c9e8.jpg_r_480x320x95_ddae113a.jpg',
-          title: '珠海-乌鲁木齐 8天跟团游',
-          desc: '钜惠新疆♥全程0自费☞陆地头等舱❀豪华住宿丨游赛里木湖+天山天池+巴音布鲁克',
-          price: '￥1111'
-        }
-      ]
+  name: 'HomeRecommend',
+  props: {
+    list: {
+      type: Array
     }
-  },
-  created () {
-
-  },
-  methods: {
-
   }
 }
 </script>

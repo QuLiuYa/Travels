@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe600;</span>
       输入城市/景点/游玩主题
       </div>
-    <div class="header-right">
+    <div class="header-right" @click="goCity">
       城市
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
@@ -16,7 +16,12 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  methods: {
+    goCity () {
+      this.$router.push('/city')
+    }
+  }
 }
 </script>
 
@@ -24,7 +29,7 @@ export default {
 @import '~styles/varibles.styl'
 .header
   display: flex
-  height: .86rem
+  height: $headerHeight
   background: $bgcolor
   color: #fff
   align-items: center

@@ -12,46 +12,15 @@
       <div class="area">
         <div class="title border-topbottom">热门城市</div>
         <div class="button-list">
-          <div class="button-wrap">
-            <div class="button">北京</div>
-          </div>
-          <div class="button-wrap">
-            <div class="button">北京</div>
-          </div>
-          <div class="button-wrap">
-            <div class="button">北京</div>
-          </div>
-          <div class="button-wrap">
-            <div class="button">北京</div>
+          <div class="button-wrap" v-for="item in hotCities" :key="item.id">
+            <div class="button">{{item.name}}</div>
           </div>
         </div>
       </div>
-      <div class="area">
-        <div class="title border-topbottom">A</div>
+      <div class="area" v-for="(item, key) in cities" :key="key" :ref="key">
+        <div class="title border-topbottom">{{key}}</div>
         <ul class="item-list">
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-        </ul>
-      </div>
-      <div class="area">
-        <div class="title border-topbottom">A</div>
-        <ul class="item-list">
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
-          <li class="item border-bottom">阿里安安</li>
+          <li class="item border-bottom" v-for="tag in item" :key="tag.id">{{tag.name}}</li>
         </ul>
       </div>
     </div>
@@ -62,8 +31,23 @@
 import BScroll from 'better-scroll'
 export default {
   name: 'CityList',
+  props: {
+    hotCities: Array,
+    cities: Object,
+    letter: String
+  },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
+  },
+  watch: {
+    // 当触摸发生变化时
+    letter () {
+      if (this.letter) {
+        let element = this.$refs[this.letter][0]
+        // console.log(element)
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 }
 </script>

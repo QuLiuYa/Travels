@@ -28,7 +28,8 @@ export default {
       swiperList: [],
       iconList: [],
       recommendList: [],
-      weekendList: []
+      weekendList: [],
+      lastCity: ''
     }
   },
   methods: {
@@ -47,7 +48,14 @@ export default {
     }
   },
   mounted () {
+    this.lastCity = this.$store.state.city
     this.getHomeInfo()
+  },
+  activated () {
+    if (this.lastCity !== this.$store.state.city) {
+      this.lastCity = this.$store.state.city
+      this.getHomeInfo()
+    }
   }
 }
 </script>

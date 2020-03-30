@@ -1,10 +1,11 @@
-@font-face {font-family: "iconfont";
-  src: url('//at.alicdn.com/t/font_1703650_ophghvbns3l.eot?t=1584688367205'); /* IE9 */
-  src: url('//at.alicdn.com/t/font_1703650_ophghvbns3l.eot?t=1584688367205#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMwAAsAAAAABzAAAALjAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqBaIFhATYCJAMQCwoABCAFhG0HSRtUBsgekiQQEgEFUCgAgTnEw9d+r+fu7n/ZECpQgDITBTg+Kg5RRUJbCyRchauwNb5TzUb8/9VpP1YJx07RVg6NBWaDpLoB+clyaYO7EYFGxinbXaabk8mA4H/cO/2rhV0g89m3XMbatNf5py7AOKBAx5xkBVKC3DB2E4FDWE+gy6QSrt2mjgFIUYBugbg3mQopuaCiWJkqNDVji/gCiWp6q7wA8Jl/Pv5DICpJKwN99y4bDaj5BVGG3sQzQRGQz+eBNYmMJaAQ17XJU0hYHKTrNwlWgKpK/IJoW5TF49LBjqXwL4+QZKIBynvAspbK/AJMEvxqI0n8YmUy/JDOFQ1WgAPNND7PHkmUnp5hV/NUMFi8/OHDwMePg58/D3/6NIE0Q0KSFVc8fDr7/YO83XPG6edFO8fo2WPFp6ZdD5T1GiSw+fnf1m0xd3/vCfT9BzqOTnz/fgJFmu/Effz7Dz22FT19ilT21qdP1Mh0K1uV9LCnsPPWa/diZs+Q9jV/YWV9M/uVsiCqegC+ug8BVmz6MrAA2tADVAZA/qbcAWiv/EH4o3/H/c/ca0fZq/9rdwE/9m6I8WBbAoxLVYne8k8s71lVQiWwl+KrsCwKFOMXGk/ogk4+bJYhv+YwjPaOE2pObkHSYQKyagottCVo6bYMjWoDuixqntxtmIBE6cSC9QqEAZcg6fMdsgEv0UL7CS1j/kJjIDJ02Y/hObvNxE3ajiCqJAbWlrCp8whFTpkmKvsIc0KqyCo5d4gI24xgv8dXzDSTCBFzDLDnWUBKiqngYdykbEZCIY4tweeILj2zUlplXi+te5FH52FIs0MgVBJhwDRLMJOOi6C0vpRWen8fgnGEqEQLZSA6hBBsZvOYn4evB9qsi/Si3MsltnlMgCRRGCVwYViT4iFCMMlhVn2rOYRO8pgdEbeU8Wq1aF+dZ31D+As3QBdwQYkUOUq0NI/csR2efGuqEcmdDF5YqnNrCQAA') format('woff2'),
-  url('//at.alicdn.com/t/font_1703650_ophghvbns3l.woff?t=1584688367205') format('woff'),
-  url('//at.alicdn.com/t/font_1703650_ophghvbns3l.ttf?t=1584688367205') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
-  url('//at.alicdn.com/t/font_1703650_ophghvbns3l.svg?t=1584688367205#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {
+  font-family: 'iconfont';  /* project id 1703650 */
+  src: url('//at.alicdn.com/t/font_1703650_kww6kcmi4h.eot');
+  src: url('//at.alicdn.com/t/font_1703650_kww6kcmi4h.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1703650_kww6kcmi4h.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1703650_kww6kcmi4h.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1703650_kww6kcmi4h.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1703650_kww6kcmi4h.svg#iconfont') format('svg');
 }
 
 .iconfont {

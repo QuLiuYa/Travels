@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      this.$http('/api/index.json')
+      this.$http('/api/index.json?city=' + this.$store.state.city)
         .then(res => {
           res = res.data
           // console.log(res)

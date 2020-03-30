@@ -8,7 +8,7 @@
       输入城市/景点/游玩主题
       </div>
     <div class="header-right" @click="goCity">
-      城市
+      {{this.$store.state.city}}
       <span class="iconfont arrow-icon">&#xe64a;</span>
     </div>
   </div>
@@ -48,7 +48,8 @@ export default {
     color: #ccc
     text-align: left
   .header-right
-    width: 1.24rem
+    min-width: 1.04rem
+    padding 0 .1rem
     .arrow-icon
       font-size: .24rem
       margin-left: -.04rem

@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import axios from 'axios'
+import store from './store'
 import 'styles/reset.css'
 import 'styles/border.css'
 import FastClick from 'fastclick'
@@ -19,5 +20,6 @@ Vue.prototype.$http = axios
 new Vue({
   el: '#app',
   router,
+  store,
   render: h => h(App)
 })

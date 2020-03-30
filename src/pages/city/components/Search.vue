@@ -1,12 +1,26 @@
 <template>
   <div>
     <div class="search">
-      <input type="text" v-model="keyword" placeholder="请输入城市名称" class="search-input">
+      <input
+        type="text"
+        v-model="keyword"
+        placeholder="请输入城市名称"
+        class="search-input"
+      />
     </div>
     <div class="search-content" v-show="keyword" ref="search">
       <ul>
-        <li class="search-item border-bottom" v-for="(item, i) in list" :key="i">{{item.name}}</li>
-        <li class="search-item border-bottom" v-show="isNoList">没有找到该城市</li>
+        <li
+          class="search-item border-bottom"
+          v-for="(item, i) in list"
+          :key="i"
+          @click="handleCityChange(item.name)"
+        >
+          {{ item.name }}
+        </li>
+        <li class="search-item border-bottom" v-show="isNoList">
+          没有找到该城市
+        </li>
       </ul>
     </div>
   </div>
@@ -31,6 +45,12 @@ export default {
       return !this.list.length
     }
   },
+  methods: {
+    handleCityChange (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
+    }
+  },
   watch: {
     keyword () {
       if (this.timer) {
@@ -44,7 +64,10 @@ export default {
         const res = []
         for (const key in this.cities) {
           this.cities[key].forEach(item => {
-            if (item.spell.indexOf(this.keyword) > -1 || item.name.indexOf(this.keyword) > -1) {
+            if (
+              item.spell.indexOf(this.keyword) > -1 ||
+              item.name.indexOf(this.keyword) > -1
+            ) {
               res.push(item)
             }
           })

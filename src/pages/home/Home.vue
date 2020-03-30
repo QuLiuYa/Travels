@@ -36,7 +36,7 @@ export default {
       this.$http('/api/index.json')
         .then(res => {
           res = res.data
-          console.log(res)
+          // console.log(res)
           if (res.ret && res.data) {
             this.swiperList = res.data.swiperList
             this.iconList = res.data.iconlist

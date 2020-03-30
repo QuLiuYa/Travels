@@ -31,7 +31,7 @@ export default {
     getCityInfo () {
       this.$http('/api/city.json')
         .then(res => {
-          console.log(res.data)
+          // console.log(res.data)
           res = res.data
           if (res.ret && res.data) {
             this.hotCities = res.data.hotCities

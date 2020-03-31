@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="banner" @click="handleGalleryClick">
-      <img class="banner-img" src="https://img1.qunarzz.com/sight/p0/201306/18/0f9d3eb7f172a35bc8d65eac.jpg_600x330_741e13bc.jpg" alt="">
+      <img class="banner-img" :src="bannerInfo.bannerImg" alt="">
       <div class="banner-info">
-        <div class="banner-title">七星寨</div>
+        <div class="banner-title">{{bannerInfo.sightName}}</div>
         <div class="banner-number"><span class="iconfont banner-icon">&#xe6dd;</span></div>
       </div>
     </div>
-    <gallery v-show="galleryIsShow" @close="handleCloseGallrey" :imgs="imgs"></gallery>
+    <gallery v-show="galleryIsShow" @close="handleCloseGallrey" :imgs="bannerInfo.gallaryImgs"></gallery>
   </div>
 </template>
 
@@ -15,16 +15,15 @@
 import Gallery from 'common/gallery/Gallery'
 export default {
   name: 'DetailBanner',
+  props: {
+    bannerInfo: Object
+  },
   components: {
     Gallery
   },
   data () {
     return {
-      galleryIsShow: false,
-      imgs: [
-        'http://img1.qunarzz.com/sight/p0/201306/18/0f9d3eb7f172a35bc8d65eac.jpg_r_800x800_d5145adc.jpg',
-        'http://img1.qunarzz.com/sight/p0/201306/18/e123c1dec9cad22dc8d65eac.jpg_r_800x800_afa5c7e8.jpg'
-      ]
+      galleryIsShow: false
     }
   },
   methods: {

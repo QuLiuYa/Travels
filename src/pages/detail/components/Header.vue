@@ -4,7 +4,7 @@
       <div class="iconfont header-icon">&#xe667;</div>
     </router-link>
     <div class="header-fiexd" v-show="!showHeader" :style="opacityStyle">
-      景点详情
+      {{ sightName }}
       <router-link to="/" class="back">
         <div class="iconfont back-icon">&#xe667;</div>
       </router-link>
@@ -15,6 +15,9 @@
 <script>
 export default {
   name: 'Header',
+  props: {
+    sightName: String
+  },
   data () {
     return {
       showHeader: true,

@@ -1,13 +1,19 @@
 <template>
   <div>
     <div class="banner" @click="handleGalleryClick">
-      <img class="banner-img" :src="bannerInfo.bannerImg" alt="">
+      <img class="banner-img" :src="bannerInfo.bannerImg" alt="" />
       <div class="banner-info">
-        <div class="banner-title">{{bannerInfo.sightName}}</div>
-        <div class="banner-number"><span class="iconfont banner-icon">&#xe6dd;</span></div>
+        <div class="banner-title">{{ bannerInfo.sightName }}</div>
+        <div class="banner-number">
+          <span class="iconfont banner-icon">&#xe6dd;</span>
+        </div>
       </div>
     </div>
-    <gallery v-show="galleryIsShow" @close="handleCloseGallrey" :imgs="bannerInfo.gallaryImgs"></gallery>
+    <gallery
+      v-show="galleryIsShow"
+      @close="handleCloseGallrey"
+      :imgs="bannerInfo.gallaryImgs"
+    ></gallery>
   </div>
 </template>
 
@@ -23,7 +29,8 @@ export default {
   },
   data () {
     return {
-      galleryIsShow: false
+      galleryIsShow: false,
+      number: this.bannerInfo.gallaryImgs
     }
   },
   methods: {
@@ -49,7 +56,7 @@ export default {
     display flex
     left 0
     right 0
-    bottom 0
+    bottom .1rem
     height .4rem
     line-height .4rem
     padding .1rem .2rem

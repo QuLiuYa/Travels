@@ -1,21 +1,25 @@
 <template>
-  <div>
+  <div class="detail">
     <detail-header :sightName="sightName"></detail-header>
     <detail-banner :bannerInfo="bannerInfo"></detail-banner>
-    <div class="con"></div>
+    <detail-info :baseInfo="baseInfo"></detail-info>
+    <detail-ticket :list="ticketList"></detail-ticket>
   </div>
 </template>
 
 <script>
 import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
+import DetailInfo from './components/Info'
+import DetailTicket from './components/Ticket'
 export default {
   name: 'Detail',
   data () {
     return {
       sightName: '',
       bannerInfo: {},
-      baseInfo: {}
+      baseInfo: {},
+      ticketList: []
     }
   },
   methods: {
@@ -31,6 +35,7 @@ export default {
           this.sightName = res.data.banner.sightName
           this.bannerInfo = res.data.banner
           this.baseInfo = res.data.baseInfo
+          this.ticketList = res.data.ticket
         }
       })
     }
@@ -40,12 +45,16 @@ export default {
   },
   components: {
     DetailBanner,
-    DetailHeader
+    DetailHeader,
+    DetailInfo,
+    DetailTicket
   }
 }
 </script>
 
 <style lang="stylus" scoped>
+.detail
+  background #f7f7f7
 .con
   height 20rem
 </style>

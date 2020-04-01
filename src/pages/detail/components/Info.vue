@@ -21,7 +21,7 @@
         </div>
       </div>
     </div>
-    <div class="map">
+    <div class="map" @click="goMap">
       <span class="iconfont map-icon">&#xe613;</span>
       <span class="map-text">{{baseInfo.address}}</span>
       <span class="iconfont map-icon">&#xe6de;</span>
@@ -39,7 +39,18 @@ export default {
     return {}
   },
   mounted () {},
-  methods: {}
+  methods: {
+    goMap () {
+      this.$router.push({
+        path: '/map',
+        query: {
+          name: this.baseInfo.sightName,
+          lng: this.baseInfo.lng,
+          lat: this.baseInfo.lat
+        }
+      })
+    }
+  }
 }
 </script>
 

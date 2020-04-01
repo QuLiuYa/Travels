@@ -4,6 +4,7 @@
     <detail-banner :bannerInfo="bannerInfo"></detail-banner>
     <detail-info :baseInfo="baseInfo"></detail-info>
     <detail-ticket :list="ticketList"></detail-ticket>
+    <detail-comment :list="commentList"></detail-comment>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import DetailBanner from './components/Banner'
 import DetailHeader from './components/Header'
 import DetailInfo from './components/Info'
 import DetailTicket from './components/Ticket'
+import DetailComment from './components/Comment'
 export default {
   name: 'Detail',
   data () {
@@ -19,7 +21,8 @@ export default {
       sightName: '',
       bannerInfo: {},
       baseInfo: {},
-      ticketList: []
+      ticketList: [],
+      commentList: []
     }
   },
   methods: {
@@ -36,6 +39,7 @@ export default {
           this.bannerInfo = res.data.banner
           this.baseInfo = res.data.baseInfo
           this.ticketList = res.data.ticket
+          this.commentList = res.data.userComment
         }
       })
     }
@@ -47,7 +51,8 @@ export default {
     DetailBanner,
     DetailHeader,
     DetailInfo,
-    DetailTicket
+    DetailTicket,
+    DetailComment
   }
 }
 </script>
